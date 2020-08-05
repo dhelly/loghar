@@ -20,7 +20,7 @@ dados <- c()
 
 for (i in seq(1:size)) {
   fileLine <- har[["log"]][["entries"]][[i]][["response"]][["content"]][["text"]]
-  videoid <- fromJSON(fileLine)$video$vimeoid
+  videoid <- fromJSON(fileLine)$video$id
   videoTitle <- fromJSON(fileLine)$video$title
   line <- paste(paste(endereco, videoid, sep = ""), paste(ref), paste("-o ", "'", videoTitle, ".mp4", "'", sep = ""), sep = " ")
   dados <- c(dados, line)
