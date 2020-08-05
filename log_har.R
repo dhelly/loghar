@@ -13,7 +13,7 @@ har <- readHAR(har = file.choose())
 size <- length(har[["log"]][["entries"]])
 
 #url composity
-endereco <- "youtube-dl -v https://player.vimeo.com/video/"
+endereco <- ""
 ref <- "--referer url"
 
 dados <- c()
